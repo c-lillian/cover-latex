@@ -1,0 +1,96 @@
+%---------------------------------------------------------------------------------------%
+% LaTeX Cover Letter Template
+% Author: Lillian Chen
+% Date Updated: Dec 1 2020
+% 
+% Cover letter advice taken directly from:
+% UCLA Career Preparation Toolkit for Graduate Students & Postdoctoral Scholars 2019-2021
+% 
+% Author's Notes:
+% 1) Make sure the coverletter.cls and latexmkrc files are in the same directory as 
+%    the Cover Letter.tex file. 
+% 2) Edit the latexmkrc file as needed to adjust to your specific time zone. 
+%    Supported Time Zones: (https://www.php.net/manual/en/timezones.php)
+% 3) Edit the coverletter.cls file as needed to make any stylistic changes you see fit.
+%---------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES & DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass{coverletter} % Use the custom coverletter.cls style
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER HEADER
+%----------------------------------------------------------------------------------------
+\name{First Last} % Your name
+
+% Address Options: Able to list up to 3 lines as needed by using up to 3 \address commands
+% Recommended set up:
+% 1st Line Contact Info: phone#, email
+% 2nd Line Contact Info: Location, LinkedIn
+% 3rd Line Contact Info (optional): Any other relevant online profiles
+\address{123~$\cdot$~456~$\cdot$~7890 \\ name@domain.com}
+\address{City, State \\ LinkedIn} 
+\address{@twitter \\ @instagram \\ github} 
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYER ADDRESS & DATE
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+\companyname{Company Name} % Name of Company
+\companyaddress{
+Attn: Hiring Manager \\
+123 Main St \\
+Unit A \\
+City, State ZIP
+}
+
+\end{minipage}
+\begin{minipage}[t]{0.49\textwidth} 
+\currentdate{\today}
+\end{minipage}
+
+\lettercontent{Dear Hiring Manager,} 
+
+% 1st Paragraph: PURPOSE
+% State why you are writing and the position at the company you are applying for. Indicate how you learned of the position.
+% If referred, be sure to include the name of the referral in this paragraph.
+% Demonstrate briefly your knowledge of the company, and create a thesis statement that outlines your unique qualifications.
+
+\lettercontent{Lorem ipsum dolor sit amet, no adhuc tempor sed, ad eum mucius omnesque deterruisset. Ea nostrum officiis accommodare has, viderer assentior mel id, est mollis vituperata constituam in. Tantas libris facilisis ex vix, sed quodsi gubergren forensibus ea, fugit singulis deseruisse mei ex. Ea eos mazim saepe molestie, iusto labores expetendis mel in. Et eum meliore instructior delicatissimi, sed delicata intellegat id.
+}
+
+% 2nd Paragraph / Body: BACKGROUND & QUALIFICATIONS
+% If you have related experience or specialized training, elaborate on the details that would be of special interest to the employer.
+% Be specific about your qualifications and skills. Proivde examples on how you obtained/honed these skills.
+% Your goal is to match your skills to the employer's needs.
+% Explain how you would fit into the position and the organization. If it gets lengthy, break this paragraph into two, to
+% make it more readable.
+
+\lettercontent{No natum neglegentur voluptatibus mea, at persecuti efficiantur consectetuer per, congue iisque disputando cum in. No esse consectetuer pro, sed te tollit corrumpit. Id inani labitur detraxit est, sit ad tation detraxit. Duo ei veritus deleniti interpretaris, eu mea sumo natum mollis. No prima legendos has, te affert dolore oportere mea, id has sint latine similique. Ne mea antiopam contentiones disputationi. 
+}
+
+\lettercontent{Usu aperiri appareat ad, eirmod ponderum per ex, cetero principes disputationi an eum. Ius ad numquam scripserit, homero civibus propriae quo cu. Qui at ignota mollis, ad vis munere impedit, ad nec autem decore evertitur. Quo te dolore laudem sanctus, ad pri insolens repudiare, conceptam persequeris eum in. An pro illud incorrupte, etiam munere vim ad, debet virtute salutandi ut mel. Dolor labore mollis vix no.
+}
+
+% 3rd Paragraph: REQUEST FOR ACTION
+% Close your letter with confidence by briefly restating how your qualifications match the position.
+% Express your interest in further discussing your background and the position with the employer.
+% Finally, include a statement expression your appreciation for the employer's consideration.
+
+\lettercontent{Tale homero doctus nec an, aeterno nominavi rationibus an mei. Tibique assentior in per, clita timeam patrioque in nam, justo definitiones vis ea. Nam harum interesset ad, pri an impetus principes. Eam an perfecto consetetur, vix at aeterno maluisset.}
+\vspace{0.5cm}
+
+
+\closing{Sincerely,}
+
+% First field is for the signature, second field is for the printed name
+\signature{First Last}\\{First Last}
+
+% Additional Notes: A cover letter is typically read by employers after the resume is reviewed, so they need to provide more tailored and targeted information. When submitting application documents, always save as a PDF. If submitting via email, put the cover letter in the body of the email and attach it as a PDF.
+
+
+\end{document}
